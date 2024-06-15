@@ -21,15 +21,54 @@
             int playerX = 1;
             int playerY = 1;
             ConsoleRenderer renderer = new ConsoleRenderer();
-
             SetMapPixels(map, renderer);
-            SetPlayer(playerX, playerY, renderer);
+            Movable player = new Movable(playerX, playerY, '@', renderer);
 
-            Console.CursorVisible = false;
+            Movable obstacle = new Movable(5, 1, '!', renderer);
+            bool obstacleDownDir = true;
 
+            renderer.Render();
+            ConsoleKeyInfo keyInfo;
             while (true)
             {
+                if (Console.KeyAvailable)
+                {
+                    keyInfo = Console.ReadKey();
+                
+                    switch (keyInfo.Key)
+                    {
+                        case ConsoleKey.UpArrow:
+                            player.TryMoveUp(map);
+                            break;
+                        case ConsoleKey.DownArrow:
+                            player.TryMoveDown(map);
+                            break;
+                        case ConsoleKey.RightArrow:
+                            player.TryMoveRight(map);
+                            break;
+                        case ConsoleKey.LeftArrow:
+                            player.TryMoveLeft(map);
+                            break;
+                    }
+                }
+
+                if (obstacleDownDir)
+                {
+                    if (!obstacle.TryMoveDown(map))
+                        obstacleDownDir = false;
+                }
+                else
+                {
+                    if (!obstacle.TryMoveUp(map))
+                        obstacleDownDir = true;
+                }
+
                 renderer.Render();
+
+                Thread.Sleep(200);
+
+                if (player.X == obstacle.X && player.Y == obstacle.Y)
+                    GameOver();
             }
 
         }
@@ -46,9 +85,9 @@
             }
         }
 
-        static void SetPlayer(int x, int y, ConsoleRenderer renderer)
+        static void GameOver()
         {
-            renderer.SetPixel(x, y, '@');
+            Environment.Exit(0);
         }
     }
 }
