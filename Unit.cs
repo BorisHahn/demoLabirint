@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace demoLabirint
 {
-    public class Movable
+    public abstract class Unit
     {
         public int X { get; private set; }
         public int Y { get; private set; }
         private ConsoleRenderer _renderer;
         private char _symbol;
 
-        public Movable(int startX, int startY, char symbol, ConsoleRenderer renderer)
+        public Unit(int startX, int startY, char symbol, ConsoleRenderer renderer)
         {
             X = startX;
             Y = startY;
@@ -22,27 +22,27 @@ namespace demoLabirint
             _renderer.SetPixel(X, Y, _symbol);
         }
 
-        public bool TryMoveLeft(char[,] map)
+        public virtual bool TryMoveLeft(char[,] map)
         {
             return TryChangePosition(X - 1, Y, map);
         }
 
-        public bool TryMoveRight(char[,] map)
+        public virtual bool TryMoveRight(char[,] map)
         {
             return TryChangePosition(X + 1, Y, map);
         }
 
-        public bool TryMoveUp(char[,] map)
+        public virtual bool TryMoveUp(char[,] map)
         {
             return TryChangePosition(X, Y - 1, map);
         }
 
-        public bool TryMoveDown(char[,] map)
+        public virtual bool TryMoveDown(char[,] map)
         {
             return TryChangePosition(X, Y + 1, map);
         }
 
-        private bool TryChangePosition(int newX, int newY, char[,] map)
+        protected virtual bool TryChangePosition(int newX, int newY, char[,] map)
         {
             if (map[newX, newY] == '#')
                 return false;
@@ -52,5 +52,7 @@ namespace demoLabirint
             _renderer.SetPixel(X, Y, _symbol);
             return true;
         }
+
+        public abstract void Update();
     }
 }

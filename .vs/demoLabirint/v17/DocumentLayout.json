@@ -1,17 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\GameDev\\demoLabirint\\",
+  "WorkspaceRootPath": "C:\\Code\\dev\\demoLabirint\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|e:\\gamedev\\demolabirint\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|c:\\code\\dev\\demolabirint\\unitsenumerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|solutionrelative:unitsenumerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|c:\\code\\dev\\demolabirint\\units.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|solutionrelative:units.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|c:\\code\\dev\\demolabirint\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|solutionrelative:unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|c:\\code\\dev\\demolabirint\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|e:\\gamedev\\demolabirint\\movable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|solutionrelative:movable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|c:\\code\\dev\\demolabirint\\verticalobstacle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|solutionrelative:verticalobstacle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|e:\\gamedev\\demolabirint\\consolerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|c:\\code\\dev\\demolabirint\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|c:\\code\\dev\\demolabirint\\consolerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|solutionrelative:consolerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -33,44 +49,91 @@
               "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitsEnumerator.cs",
+              "DocumentMoniker": "C:\\Code\\dev\\demoLabirint\\UnitsEnumerator.cs",
+              "RelativeDocumentMoniker": "UnitsEnumerator.cs",
+              "ToolTip": "C:\\Code\\dev\\demoLabirint\\UnitsEnumerator.cs",
+              "RelativeToolTip": "UnitsEnumerator.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAswBcAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T19:21:31.666Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Movable.cs",
-              "DocumentMoniker": "E:\\GameDev\\demoLabirint\\Movable.cs",
-              "RelativeDocumentMoniker": "Movable.cs",
-              "ToolTip": "E:\\GameDev\\demoLabirint\\Movable.cs",
-              "RelativeToolTip": "Movable.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAowCgAAAAJAAAA",
+              "Title": "Units.cs",
+              "DocumentMoniker": "C:\\Code\\dev\\demoLabirint\\Units.cs",
+              "RelativeDocumentMoniker": "Units.cs",
+              "ToolTip": "C:\\Code\\dev\\demoLabirint\\Units.cs",
+              "RelativeToolTip": "Units.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T19:11:33.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VerticalObstacle.cs",
+              "DocumentMoniker": "C:\\Code\\dev\\demoLabirint\\VerticalObstacle.cs",
+              "RelativeDocumentMoniker": "VerticalObstacle.cs",
+              "ToolTip": "C:\\Code\\dev\\demoLabirint\\VerticalObstacle.cs",
+              "RelativeToolTip": "VerticalObstacle.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T19:03:30.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Code\\dev\\demoLabirint\\Player.cs",
+              "RelativeDocumentMoniker": "Player.cs",
+              "ToolTip": "C:\\Code\\dev\\demoLabirint\\Player.cs",
+              "RelativeToolTip": "Player.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T18:53:13.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Unit.cs",
+              "DocumentMoniker": "C:\\Code\\dev\\demoLabirint\\Unit.cs",
+              "RelativeDocumentMoniker": "Unit.cs",
+              "ToolTip": "C:\\Code\\dev\\demoLabirint\\Unit.cs",
+              "RelativeToolTip": "Unit.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAgwDYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-15T22:21:02.579Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "ConsoleRenderer.cs",
-              "DocumentMoniker": "E:\\GameDev\\demoLabirint\\ConsoleRenderer.cs",
+              "DocumentMoniker": "C:\\Code\\dev\\demoLabirint\\ConsoleRenderer.cs",
               "RelativeDocumentMoniker": "ConsoleRenderer.cs",
-              "ToolTip": "E:\\GameDev\\demoLabirint\\ConsoleRenderer.cs",
+              "ToolTip": "C:\\Code\\dev\\demoLabirint\\ConsoleRenderer.cs",
               "RelativeToolTip": "ConsoleRenderer.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAQwB0AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T12:18:37.693Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-15T12:18:37.693Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\GameDev\\demoLabirint\\Program.cs",
+              "DocumentMoniker": "C:\\Code\\dev\\demoLabirint\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\GameDev\\demoLabirint\\Program.cs",
+              "ToolTip": "C:\\Code\\dev\\demoLabirint\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAADoAAAAAAAAAAAAgwEoAAAAAAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACkAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-15T12:04:24.681Z",
               "EditorCaption": ""

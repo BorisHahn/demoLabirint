@@ -22,47 +22,24 @@
             int playerY = 1;
             ConsoleRenderer renderer = new ConsoleRenderer();
             SetMapPixels(map, renderer);
-            Movable player = new Movable(playerX, playerY, '@', renderer);
 
-            Movable obstacle = new Movable(5, 1, '!', renderer);
-            bool obstacleDownDir = true;
+            Player player = new Player(playerX, playerY, renderer, map);
+            VerticalObstacle obstacle = new VerticalObstacle(5, 1, '!', renderer, map);
+
+
+            Units units = new Units();
+            units.Add(player);
+            units.Add(obstacle);
 
             renderer.Render();
             ConsoleKeyInfo keyInfo;
             while (true)
             {
-                if (Console.KeyAvailable)
+                foreach(Unit unit in units)
                 {
-                    keyInfo = Console.ReadKey();
-                
-                    switch (keyInfo.Key)
-                    {
-                        case ConsoleKey.UpArrow:
-                            player.TryMoveUp(map);
-                            break;
-                        case ConsoleKey.DownArrow:
-                            player.TryMoveDown(map);
-                            break;
-                        case ConsoleKey.RightArrow:
-                            player.TryMoveRight(map);
-                            break;
-                        case ConsoleKey.LeftArrow:
-                            player.TryMoveLeft(map);
-                            break;
-                    }
+                    unit.Update();
                 }
-
-                if (obstacleDownDir)
-                {
-                    if (!obstacle.TryMoveDown(map))
-                        obstacleDownDir = false;
-                }
-                else
-                {
-                    if (!obstacle.TryMoveUp(map))
-                        obstacleDownDir = true;
-                }
-
+                    
                 renderer.Render();
 
                 Thread.Sleep(200);
