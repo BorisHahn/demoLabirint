@@ -23,7 +23,10 @@ namespace demoLabirint
 
         public IEnumerator GetEnumerator()
         {
-            return new UnitsEnumerator(_units);
+            for (int i = 0; i < _units.Count; i++)
+            {
+                yield return _units[i];
+            }
         }
     }
 }

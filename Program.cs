@@ -25,11 +25,12 @@
 
             Player player = new Player(playerX, playerY, renderer, map);
             VerticalObstacle obstacle = new VerticalObstacle(5, 1, '!', renderer, map);
-
+            SmartEnemy enemy = new SmartEnemy(8, 8, '$', renderer, map, player);
 
             Units units = new Units();
             units.Add(player);
             units.Add(obstacle);
+            units.Add(enemy);
 
             renderer.Render();
             ConsoleKeyInfo keyInfo;
@@ -44,8 +45,13 @@
 
                 Thread.Sleep(200);
 
-                if (player.X == obstacle.X && player.Y == obstacle.Y)
-                    GameOver();
+                foreach (Unit unit in units)
+                {
+                    if (unit == player)
+                        continue;
+                    if (player.X == unit.X && player.Y == unit.Y)
+                        GameOver();
+                }
             }
 
         }
