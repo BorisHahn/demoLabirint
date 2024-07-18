@@ -9,12 +9,9 @@ namespace demoLabirint
 {
     public class Player : Unit
     {
-        private char[,] _map;
-
-        public Player(int startX, int startY, ConsoleRenderer renderer, char[,] map) : 
+        public Player(int startX, int startY, ConsoleRenderer renderer) : 
             base(startX, startY, '@', renderer)
         {
-            _map = map;
         }
         public override void Update()
         {
@@ -26,16 +23,16 @@ namespace demoLabirint
                 switch (keyInfo.Key)
                 {
                     case ConsoleKey.UpArrow:
-                        TryMoveUp(_map);
+                        TryMoveUp();
                         break;
                     case ConsoleKey.DownArrow:
-                        TryMoveDown(_map);
+                        TryMoveDown();
                         break;
                     case ConsoleKey.RightArrow:
-                        TryMoveRight(_map);
+                        TryMoveRight();
                         break;
                     case ConsoleKey.LeftArrow:
-                        TryMoveLeft(_map);
+                        TryMoveLeft();
                         break;
                 }
             }
