@@ -4,16 +4,16 @@
     {
         static void Main(string[] args)
         {
-            
-
             int playerX = 1;
             int playerY = 1;
             ConsoleRenderer renderer = new ConsoleRenderer();
+            ConsoleInput input = new ConsoleInput();
+
             SetMapPixels(GameData.GetInstance().Map, renderer);
 
-            Player player = new Player(playerX, playerY, renderer);
-            VerticalObstacle obstacle = new VerticalObstacle(5, 1, '!', renderer);
-            SmartEnemy enemy = new SmartEnemy(8, 8, '$', renderer, player);
+            Player player = new Player(new Vector2(playerX, playerY), renderer, input);
+            VerticalObstacle obstacle = new VerticalObstacle(new Vector2(5, 1), '!', renderer);
+            SmartEnemy enemy = new SmartEnemy(new Vector2(8, 8), '$', renderer, player);
 
             Units units = new Units();
             units.Add(player);
@@ -24,6 +24,7 @@
             ConsoleKeyInfo keyInfo;
             while (true)
             {
+                input.Update();
                 foreach(Unit unit in units)
                 {
                     unit.Update();
@@ -37,7 +38,7 @@
                 {
                     if (unit == player)
                         continue;
-                    if (player.X == unit.X && player.Y == unit.Y)
+                    if (player.Position.Equals(unit.Position))
                         GameOver();
                 }
             }

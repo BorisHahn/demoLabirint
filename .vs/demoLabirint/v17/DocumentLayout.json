@@ -5,6 +5,30 @@
     {
       "AbsoluteMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|c:\\code\\dev\\demolabirint\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|c:\\code\\dev\\demolabirint\\smartenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|solutionrelative:smartenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|c:\\code\\dev\\demolabirint\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|solutionrelative:node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|c:\\code\\dev\\demolabirint\\vector2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|solutionrelative:vector2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|c:\\code\\dev\\demolabirint\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|solutionrelative:unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|c:\\code\\dev\\demolabirint\\consoleinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|solutionrelative:consoleinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|c:\\code\\dev\\demolabirint\\imoveinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7C711E-FE50-40A2-AA09-B87E043AACAE}|demoLabirint.csproj|solutionrelative:imoveinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,13 +50,89 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Node.cs",
+              "DocumentMoniker": "C:\\Code\\dev\\demoLabirint\\Node.cs",
+              "RelativeDocumentMoniker": "Node.cs",
+              "ToolTip": "C:\\Code\\dev\\demoLabirint\\Node.cs",
+              "RelativeToolTip": "Node.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwCMAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T19:47:16.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SmartEnemy.cs",
+              "DocumentMoniker": "C:\\Code\\dev\\demoLabirint\\SmartEnemy.cs",
+              "RelativeDocumentMoniker": "SmartEnemy.cs",
+              "ToolTip": "C:\\Code\\dev\\demoLabirint\\SmartEnemy.cs",
+              "RelativeToolTip": "SmartEnemy.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAgwFIAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T19:45:04.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Vector2.cs",
+              "DocumentMoniker": "C:\\Code\\dev\\demoLabirint\\Vector2.cs",
+              "RelativeDocumentMoniker": "Vector2.cs",
+              "ToolTip": "C:\\Code\\dev\\demoLabirint\\Vector2.cs",
+              "RelativeToolTip": "Vector2.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T19:26:15.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Unit.cs",
+              "DocumentMoniker": "C:\\Code\\dev\\demoLabirint\\Unit.cs",
+              "RelativeDocumentMoniker": "Unit.cs",
+              "ToolTip": "C:\\Code\\dev\\demoLabirint\\Unit.cs",
+              "RelativeToolTip": "Unit.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAgwCcAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T19:06:22.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ConsoleInput.cs",
+              "DocumentMoniker": "C:\\Code\\dev\\demoLabirint\\ConsoleInput.cs",
+              "RelativeDocumentMoniker": "ConsoleInput.cs",
+              "ToolTip": "C:\\Code\\dev\\demoLabirint\\ConsoleInput.cs",
+              "RelativeToolTip": "ConsoleInput.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAkwCMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T18:56:37.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IMoveInput.cs",
+              "DocumentMoniker": "C:\\Code\\dev\\demoLabirint\\IMoveInput.cs",
+              "RelativeDocumentMoniker": "IMoveInput.cs",
+              "ToolTip": "C:\\Code\\dev\\demoLabirint\\IMoveInput.cs",
+              "RelativeToolTip": "IMoveInput.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T18:55:12.147Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Code\\dev\\demoLabirint\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Code\\dev\\demoLabirint\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAQwDYAAAAkAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBQAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-18T17:24:51.16Z",
               "EditorCaption": ""

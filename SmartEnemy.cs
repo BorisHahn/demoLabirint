@@ -12,8 +12,8 @@ namespace demoLabirint
         private int[] dx = { -1, 0, 1, 0 };
         private int[] dy = { 0, 1, 0, -1 };
 
-        public SmartEnemy(int startX, int startY, char symbol, ConsoleRenderer renderer, Unit target) : 
-            base(startX, startY, symbol, renderer)
+        public SmartEnemy(Vector2 startPosition, char symbol, ConsoleRenderer renderer, Unit target) : 
+            base(startPosition, symbol, renderer)
         {
             _target = target;
         }
@@ -26,13 +26,13 @@ namespace demoLabirint
                 return;
 
             Node nextPosition = path[1];
-            TryChangePosition(nextPosition.X, nextPosition.Y);
+            TryChangePosition(nextPosition.Position);
         }
 
         public List<Node> FindPath()
         {
-            Node startNode = new Node(X, Y);
-            Node targetNode = new Node(_target.X, _target.Y);
+            Node startNode = new Node(Position);
+            Node targetNode = new Node(_target.Position);
 
             //Сюда добавляются все вершины, в которые можно пойти
             List<Node> openList = new List<Node>() { startNode };
@@ -53,7 +53,7 @@ namespace demoLabirint
                 openList.Remove(currentNode);
                 closedList.Add(currentNode);
 
-                if (currentNode.X == targetNode.X && currentNode.Y == targetNode.Y)
+                if (currentNode.Position.Equals(targetNode.Position))
                 {
                     List<Node> path = new List<Node>();
 
@@ -69,17 +69,17 @@ namespace demoLabirint
 
                 for (int i = 0; i < dx.Length; i++)
                 {
-                    int newX = currentNode.X + dx[i];
-                    int newY = currentNode.Y + dy[i];
+                    int newX = currentNode.Position.X + dx[i];
+                    int newY = currentNode.Position.Y + dy[i];
 
                     if (IsValid(newX, newY))
                     {
-                        Node neighbor = new Node(newX, newY);
+                        Node neighbor = new Node(new Vector2(newX, newY));
 
                         if (closedList.Contains(neighbor))
                             continue;
                         neighbor.Parent = currentNode;
-                        neighbor.CalculateEstimate(targetNode.X, targetNode.Y);
+                        neighbor.CalculateEstimate(targetNode.Position);
                         neighbor.CalculateValue();
 
                         openList.Add(neighbor);
